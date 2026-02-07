@@ -1,8 +1,11 @@
 # Terraform local files
+# Terraform local files
+@"
 .terraform/
 *.tfstate
 *.tfstate.backup
-crash.log
+.terraform.lock.hcl
+"@ | Set-Content .gitignore
 
 # Override files
 override.tf
